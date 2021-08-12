@@ -10,16 +10,26 @@
         }return sum/n;
     }const array=[234, 324, 23, 23, 453, 53];
     console.log(arrayAvarage(array));
-
+//  another way 
+function arraySum(array){
+    let n=array.length;
+    let sum=0;
+    for( let i=1; i<n; i++){
+        sum+=array[i];
+        return sum/n;
+    }
+}const array=[34, 354, 56, 45, 56, 67, 78];
+console.log(arraySum(array));
 
 
 //problem 12##############################
 //Coding challenge #12: Create a function that receives an array of numbers and returns an array containing only the positive numbers
 
+
 function getPositives(ar)
 {
-    var ar2 = [];
-    for(var i = 0; i < ar.length; i++)
+    var ar2 = []; 
+    for(var i = 0; i <ar.length; i++)
     {
         var el = ar[i];
         
