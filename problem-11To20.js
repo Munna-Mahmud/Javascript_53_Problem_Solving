@@ -25,25 +25,48 @@ console.log(arraySum(array));
 //problem 12##############################
 //Coding challenge #12: Create a function that receives an array of numbers and returns an array containing only the positive numbers
 
+function getPositives(array){
 
-function getPositives(ar)
-{
-    var ar2 = []; 
-    for(var i = 0; i <ar.length; i++)
-    {
-        var el = ar[i];
-        
-        if (el >= 0)
-        {
-            ar2.push(el);
+ let array2 =[ ];
+
+    for( let i=0; i<array.length; i++){
+        let el=array[i]
+
+        if( el>=0 ){
+            array2.push(el)
         }
     }
-    return ar2;
+return array2;
+
+} const array=[ 23, -34, 46, -64, 736, -76];
+console.log(getPositives(array));
+
+
+//problem 13
+// Coding challenge #13: Find the maximum number in an array of numbers
+
+function findMax(ar) {
+    var max = ar[0];
+
+    for (var i = 0; i < ar.length; i++) {
+        if (ar[i] > max) {
+            max = ar[i];
+        }
+    }
+    return max;
 }
 
 var ar = [-5, 10, -3, 12, -9, 5, 90, 0, 1];
-var ar2 = getPositives(ar);
+var max = findMax(ar);
+console.log("Max:", max);
 
-console.log(ar2);
+var array = [3 , 6, 2, 56, 32, 5, 89, 32];
+var largest= 0;
 
+for (i=0; i<=largest;i++){
+    if (array[i]>largest) {
+        var largest=array[i];
+    }
+}
 
+console.log(largest);
